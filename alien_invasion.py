@@ -34,8 +34,8 @@ class AlienInvasion:
         # Set the background color
         self.bg_color = (230, 230,230)
 
-        # Start alien invasion in an active status.
-        self.game_active = True
+        # Start alien invasion in an inactive status.
+        self.game_active = False
 
     def run_game(self):
         """Start the main loop for the game."""
