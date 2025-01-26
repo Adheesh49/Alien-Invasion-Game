@@ -210,7 +210,17 @@ class AlienInvasion:
     def _check_play_button(self, mouse_pos):
          """Start a new game when the player clicks Play."""
          if self.play_button.rect.collidepoint(mouse_pos):
+              # Reset the game statistics.
+              self.stats.reset_stats()
               self.game_active = True
+
+              # Get rid of any remaiing bullets and aliens.
+              self.bullets.empty()
+              self.aliens.empty()
+
+              # Create the new fleet and centre the fleet.
+              self._create_fleet()
+              self.ship.center_ship()
 
 if __name__ == '__main__':
     #Make a game instance and run a game.
