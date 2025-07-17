@@ -68,6 +68,7 @@ Alien-Invasion-Game/
 ├── settings.py       # Screen, speed, and color settings
 ├── button.py         # Start/play button functionality
 └── alien_invasion.py # Main game loop & event handling
+
 How It Works
 Initialization: Load game settings, window, sprites
 Main loop:
@@ -77,11 +78,13 @@ Detect collisions: bullet-alien, alien-ship, alien-bottom
 Refresh screen & display stats
 Progression: Clear wave ➝ next level spawns faster aliens
 Game Over: Lose all lives ➝ stop & optionally restart
+
 Future Enhancements
 🎁 Power-ups: Shields, rapid-fire, multi-bullets
 🌟 Boss levels: Introduce enemy types with unique behaviors
 👥 Multiplayer mode: Co-op or competitive play
 🎨 UI polish: Menus, sound FX, and animations
+
 Contributing
 Love the game? Want to help?
 
@@ -90,5 +93,6 @@ Create a feature branch (git checkout -b feature-awesome)
 Commit your enhancements
 Push to your fork
 Open a Pull Request
+
 License
 License details to be added.
